@@ -1,11 +1,36 @@
 body {
+  font-family: "Roboto Mono", monospace;
   background-color: #282a36;
   color: #f8f8f2;
 }
 
+/* Default Layout Formatting for Sections */
+.section {
+  padding: 5rem 5rem;
+}
+
+.headings {
+  width: 68.75%;
+  margin: 0 auto;
+}
+
+.headings sub {
+  padding-bottom: 20px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 60px;
+  letter-spacing: 1px;
+}
+
+.highlight {
+  color: #bd93f9;
+}
+
 /* Navbar Layout and Formatting */
 .navbar-brand {
-  color: #bd93f9;
+  color: #f8f8f2;
 }
 
 .navbar-custom {
@@ -61,31 +86,15 @@ body {
   border-color: #282a36;
 }
 
-/* Default Layout Formatting for Sections */
-.section {
-  padding: 5rem 5rem;
-}
-
-.headings {
-  width: 68.75%;
-  margin: 0 auto;
-}
-
-.headings sub {
-  padding-bottom: 20px;
-  display: block;
-  font-size: 10px;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 60px;
-  letter-spacing: 1px;
-}
-
-/* About Section */
-#about {
+/* Hero Section */
+#hero {
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-spacing {
+  margin-bottom: 1.5rem;
 }
 
 .center-text {
@@ -96,8 +105,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.about-title {
-  color: #ff79c6;
+.hero-title {
+  color: #bd93f9;
+}
+
+.hero-title2 {
+  color: #f8f8f2;
 }
 
 .resume-btn {
@@ -107,20 +120,42 @@ body {
   margin-bottom: 0.5%;
 }
 
-.about-links {
+.hero-links {
   display: inline;
 }
 
-.about-links a {
+.hero-links a {
   font-size: 1.5rem;
   padding: 0.5%;
   margin-left: 2rem;
   color: #bd93f9;
 }
 
+/* About Section */
+.about-title {
+  color: #8be9fd;
+}
+
+.bio {
+  margin: 0 6%;
+}
+
+.about-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background: #8be9fd;
+}
+
+.bio-container {
+  margin: 5rem auto;
+}
+
 /* Skills Section */
 .skills-title {
-  color: #8be9fd;
+  color: #50fa7b;
 }
 
 .skills-line::before {
@@ -129,7 +164,7 @@ body {
   left: 0;
   width: 50px;
   height: 1px;
-  background: #8be9fd;
+  background: #50fa7b;
 }
 
 .skill-container {
@@ -142,7 +177,7 @@ body {
 
 /* Projects Section*/
 .projects-title {
-  color: #50fa7b;
+  color: #f1fa8c;
 }
 
 .projects-line::before {
@@ -151,7 +186,7 @@ body {
   left: 0;
   width: 50px;
   height: 1px;
-  background: #50fa7b;
+  background: #f1fa8c;
 }
 
 .project-container {
@@ -159,7 +194,7 @@ body {
 }
 
 .project {
-  margin: 3rem 0rem;
+  margin: 5rem 0rem;
 }
 
 .project-text {
@@ -173,7 +208,7 @@ body {
 }
 
 .contact-title {
-  color: #f1fa8c;
+  color: #ffb86c;
 }
 
 .contact-line::before {
@@ -182,7 +217,7 @@ body {
   left: 0;
   width: 50px;
   height: 1px;
-  background: #f1fa8c;
+  background: #ffb86c;
 }
 
 .contact-row {
