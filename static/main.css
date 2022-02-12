@@ -230,15 +230,6 @@ body {
   width: 7rem;
 }
 
-@media (max-width: 990px) {
-  .name-row {
-    padding: 0.5rem 0rem;
-  }
-  .email-row {
-    padding: 0.5rem 0rem;
-  }
-}
-
 /* Footer */
 .footer {
   /* position: absolute; */
@@ -255,4 +246,43 @@ body {
   /* margin-top: 25px; */
   font-size: 16px;
   color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 75%;
+  }
+}
+
+@media (max-width: 990px) {
+  .project-row {
+    display: block;
+  }
+  .project-text {
+    padding-top: 2rem;
+  }
+  .contact-form {
+    width: 75%;
+  }
+  .name-row {
+    padding: 0.5rem 0rem;
+  }
+  .email-row {
+    padding: 0.5rem 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 5rem 0;
+  }
+  .center-text {
+    padding: 1rem;
+    width: 100%;
+  }
+  .contact-form {
+    padding: 1rem;
+    width: 100%;
+  }
 }
